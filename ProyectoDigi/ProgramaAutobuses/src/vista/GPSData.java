@@ -14,4 +14,10 @@ public class GPSData {
         this.lon = lon;
         this.speed = speed;
     }
+    @Override
+    public String toString() {
+        return "Bus " + busId + " | t=" + timestamp +
+                " | Pos=(" + String.format("%.4f", lat) + ", " + String.format("%.4f", lon) + ")" +
+                " | Vel=" + speed + " km/h";
+    }
 }

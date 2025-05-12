@@ -11,4 +11,8 @@ public class ParadasData {
         this.longitud = longitud;
         this.latitud = latitud;
     }
+
+    public String toString(){
+        return "Parada " + parada + " @ (" + latitud + ", " + longitud + ")";
+    }
 }
